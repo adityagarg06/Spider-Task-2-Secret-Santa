@@ -1,0 +1,15 @@
+doctype html
+head
+  style
+      include ../static/styleJGroup.css
+  title Secret Santa
+body
+.container
+  h1 Join Group
+  form(action='/joinGroup' method='post')
+    .input-box
+    label(for='') Unique id of group : 
+    input(type='text' name='uniqueid' value='' placeholder='unique id')
+    .input-box.button
+       input(type='Submit' value='Submit')
+    

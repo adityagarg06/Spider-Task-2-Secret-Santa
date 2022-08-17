@@ -1,0 +1,26 @@
+doctype html
+head
+  style
+      include ../static/styleGroup.css
+  title Secret Santa
+body
+.container
+  h1 Create Group
+  form(action='/createGroup' method='post')
+    .input-box
+       label(for='') Name of the group  
+       input(type='text' name='name' value='' required='')
+    .input-box
+       label(for='') Date 
+       input(type='date' name='date' value='' required='' pattern='\d{4}-\d{2}-\d{2}' placeholder='Date')
+    .input-box   
+       label(for='') Registration date  
+       input(type='date' name='regisDate' value='' required='' pattern='\d{4}-\d{2}-\d{2}')
+    .input-box
+       label(for='') Budget  
+       input(type='number' name='budget' value='' required='')
+    .input-box
+       label(for='') Location  
+       input(type='text' name='location' value='' required='')
+    .input-box.button
+       input(type='Submit' value='Submit')

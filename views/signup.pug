@@ -1,0 +1,22 @@
+doctype html
+head
+  style
+      include ../static/styleSignup.css
+  title Secret Santa
+.wrapper
+  h2 Registration
+  form(action='/signup', method='post')
+    .input-box
+      input(type='text' placeholder='Enter your name' required='' name='username')
+    .input-box
+      input(type='text' placeholder='Enter your email' required='' name='email')
+    .input-box
+      input(type='password' placeholder='Create password' required='' name='password')
+    .input-box
+      input(type='password' placeholder='Confirm password' required='' name='confirmPassword')
+    .input-box.button
+      input(type='Submit' value='Register Now')
+    .text
+      h3
+        | Already have an account? 
+        a(href='/') Login now
